@@ -5,8 +5,7 @@ https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1
 
 API KEY
 --------
-jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew 
-
+jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew
 
 curl https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/insertOne \
 -H 'Content-Type: application/json' \
@@ -54,300 +53,300 @@ curl https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/dat
   "filter": {"name": "Beef Burger"}
 }'
 
-curl  https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/find \
--H 'Content-Type: application/json'  \
+curl https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/find \
+-H 'Content-Type: application/json' \
 -H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
---data-raw \
-'{
-  "dataSource": "Cluster0", 
-  "database" : "Menu", 
-  "collection" : "main course", 
-  "filter" : {"name" : "Beef Burger" }
-'
-
-curl  https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/updateOne \
--H 'Content-Type: application/json'  \
--H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
---data-raw \
-'{  
-      "dataSource": "Cluster0",
-    "database": "Menu",
-    "collection": "main course",
-    "documents": [{
-            "name": "Chicken fries",
-            "price": "1.000 OMR"
+--data-raw '{
+  "dataSource": "Cluster0",
+  "database": "Menu",
+  "collection": "main course",
+  "filter": {"name": "Beef Burger"}
 }'
 
-curl  https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/find \
--H 'Content-Type: application/json'  \
+curl https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/updateOne \
+-H 'Content-Type: application/json' \
 -H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
---data-raw \
-'{
-  "dataSource": "Cluster0", 
-  "database" : "Menu", 
-  "collection" : "main course", 
-  "filter" : {"name" : "Chicken fries" }
-
-curl https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/insertMany \
--H 'Content-Type: application/json'  \
--H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
---data-raw \
-'{
-    "dataSource": "Cluster0",
-    "database": "Menu",
-    "collection": "main course",
-    "documents": [{
-            "name": "grape leaves",
-            "price": "1.000 OMR"
-}'
-
-curl  https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/find \
--H 'Content-Type: application/json'  \
--H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
---data-raw \
-'{
-  "dataSource": "Cluster0", 
-  "database" : "Menu", 
-  "collection" : "main course", 
-  "filter" : {"name" : "grape leaves" }
-'curl https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/insertMany \
--H 'Content-Type: application/json'  \
--H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
---data-raw \
-'{
-    "dataSource": "Cluster0",
-    "database": "Menu",
-    "collection": "main course",
-    "documents": [{
-            "name": "Shawarma",
-            "price": "0.200 OMR"
+--data-raw '{
+  "dataSource": "Cluster0",
+  "database": "Menu",
+  "collection": "main course",
+  "documents": [{
+    "name": "Chicken fries",
+    "price": "1.000 OMR"
+  }]
 }'
 
 curl https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/find \
--H 'Content-Type: application/json'  \
+-H 'Content-Type: application/json' \
 -H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
---data-raw \
-'{
-  "dataSource": "Cluster0", 
-  "database" : "Menu", 
-  "collection" : "main course", 
-  "filter" : {"name" : "Shawarma" }
-'
-curl https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/insertMany \
--H 'Content-Type: application/json'  \
--H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
---data-raw \
-'{
-    "dataSource": "Cluster0",
-    "database": "Menu",
-    "collection": "main course",
-    "documents": [{
-            "name": "Chicken Sandwich",
-            "price": "0.200 OMR"
+--data-raw '{
+  "dataSource": "Cluster0",
+  "database": "Menu",
+  "collection": "main course",
+  "filter": {"name": "Chicken fries"}
 }'
 
-curl  https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/find \
--H 'Content-Type: application/json'  \
+curl https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/insertMany \
+-H 'Content-Type: application/json' \
 -H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
---data-raw \
-'{
-  "dataSource": "Cluster0", 
-  "database" : "Menu", 
-  "collection" : "main course", 
-  "filter" : {"name" : "Chicken Sandwich" }
-'
-curl  https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/insertMany \
--H 'Content-Type: application/json'  \
--H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
---data-raw \
-'{
-    "dataSource": "Cluster0",
-    "database": "Menu",
-    "collection": "Drinks",
-    "documents": [{
-            "name": "Orange juice",
-            "price": "0.800 OMR"
+--data-raw '{
+  "dataSource": "Cluster0",
+  "database": "Menu",
+  "collection": "main course",
+  "documents": [{
+    "name": "grape leaves",
+    "price": "1.000 OMR"
+  }]
 }'
 
 curl https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/find \
--H 'Content-Type: application/json'  \
+-H 'Content-Type: application/json' \
 -H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
---data-raw \
-'{
-  "dataSource": "Cluster0", 
-  "database" : "Menu", 
-  "collection" : "Drinks", 
-  "filter" : {"name" : "Orange juice" }
-'
-curl  https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/insertMany \
--H 'Content-Type: application/json'  \
--H 'api-key:jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
---data-raw \
-'{
-    "dataSource": "Cluster0",
-    "database": "Menu",
-    "collection": "Drinks",
-    "documents": [{
-            "name": "Mango juice",
-            "price": "0.800 OMR"
+--data-raw '{
+  "dataSource": "Cluster0",
+  "database": "Menu",
+  "collection": "main course",
+  "filter": {"name": "grape leaves"}
+}'
+
+curl https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/insertMany \
+-H 'Content-Type: application/json' \
+-H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
+--data-raw '{
+  "dataSource": "Cluster0",
+  "database": "Menu",
+  "collection": "main course",
+  "documents": [{
+    "name": "Shawarma",
+    "price": "0.200 OMR"
+  }]
 }'
 
 curl https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/find \
--H 'Content-Type: application/json'  \
+-H 'Content-Type: application/json' \
 -H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
---data-raw \
-'{
-  "dataSource": "Cluster0", 
-  "database" : "Menu", 
-  "collection" : "Drinks", 
-  "filter" : {"name" : "Mango juice" }
-'
-curl  https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/insertMany \
--H 'Content-Type: application/json'  \
--H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
---data-raw \
-'{
-    "dataSource": "Cluster0",
-    "database": "Menu",
-    "collection": "Drinks",
-    "documents": [{
-            "name": "Lemon juice",
-            "price": "0.800 OMR"
+--data-raw '{
+  "dataSource": "Cluster0",
+  "database": "Menu",
+  "collection": "main course",
+  "filter": {"name": "Shawarma"}
 }'
 
-curl  https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/find \
--H 'Content-Type: application/json'  \
--H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
---data-raw \
-'{
-  "dataSource": "Cluster0", 
-  "database" : "Menu", 
-  "collection" : "Drinks", 
-  "filter" : {"name" : "Lemon juice" }
-'
-curl  https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/insertMany \
--H 'Content-Type: application/json'  \
--H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
---data-raw \
-'{
-    "dataSource": "Cluster0",
-    "database": "Menu",
-    "collection": "Drinks",
-    "documents": [{
-            "name": "iced tea",
-            "price": "1.200 OMR"
-}'
-
-curl  https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/find \
--H 'Content-Type: application/json'  \
--H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
---data-raw \
-'{
-  "dataSource": "Cluster0", 
-  "database" : "Menu", 
-  "collection" : "Drinks", 
-  "filter" : {"name" : "iced tea" }
-'
-curl  https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/insertMany \
--H 'Content-Type: application/json'  \
--H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
---data-raw \
-'{
-    "dataSource": "Cluster0",
-    "database": "Menu",
-    "collection": "Drinks",
-    "documents": [{
-            "name": "COFFEE",
-            "price": "1.000 OMR"
-}'
-
-curl  https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/find \
--H 'Content-Type: application/json'  \
--H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
---data-raw \
-'{
-  "dataSource": "Cluster0", 
-  "database" : "Menu", 
-  "collection" : "Drinks", 
-  "filter" : {"name" : "COFFEE" }
-'
 curl https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/insertMany \
--H 'Content-Type: application/json'  \
+-H 'Content-Type: application/json' \
 -H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
---data-raw \
-'{
-    "dataSource": "Cluster0",
-    "database": "Menu",
-    "collection": "DESSERTS",
-    "documents": [{
-            "name": "Cinnabon",
-            "price": "0.800 OMR"
-}'
-
-curl  https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/find \
--H 'Content-Type: application/json'  \
--H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
---data-raw \
-'{
-  "dataSource": "Cluster0", 
-  "database" : "Menu", 
-  "collection" : "DESSERTS", 
-  "filter" : {"name" : "Cinnabon" }
-'
-curl https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/insertMany \
--H 'Content-Type: application/json'  \
--H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
---data-raw \
-'{
-    "dataSource": "Cluster0",
-    "database": "Menu",
-    "collection": "DESSERTS",
-    "documents": [{
-            "name": "San Sebastian",
-            "price": "1.200 OMR"
+--data-raw '{
+  "dataSource": "Cluster0",
+  "database": "Menu",
+  "collection": "main course",
+  "documents": [{
+    "name": "Chicken Sandwich",
+    "price": "0.200 OMR"
+  }]
 }'
 
 curl https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/find \
--H 'Content-Type: application/json'  \
+-H 'Content-Type: application/json' \
 -H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
---data-raw \
-'{
-  "dataSource": "Cluster0", 
-  "database" : "Menu", 
-  "collection" : "DESSERTS", 
-  "filter" : {"name" : "San Sebastian" }
-'
-curl https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/insertMany \
--H 'Content-Type: application/json'  \
--H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
---data-raw \
-'{
-    "dataSource": "Cluster0",
-    "database": "Menu",
-    "collection": "DESSERTS",
-    "documents": [{
-            "name": "cookie",
-            "price": "0.300 OMR"
+--data-raw '{
+  "dataSource": "Cluster0",
+  "database": "Menu",
+  "collection": "main course",
+  "filter": {"name": "Chicken Sandwich"}
 }'
 
-curl  https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/find \
--H 'Content-Type: application/json'  \
+curl https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/insertMany \
+-H 'Content-Type: application/json' \
 -H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
---data-raw \
-'{
-  "dataSource": "Cluster0", 
-  "database" : "Menu", 
-  "collection" : "DESSERTS", 
-  "filter" : {"name" : "cookie" }
+--data-raw '{
+  "dataSource": "Cluster0",
+  "database": "Menu",
+  "collection": "Drinks",
+  "documents": [{
+    "name": "Orange juice",
+    "price": "0.800 OMR"
+  }]
+}'
 
-curl  https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/aggregate \
--H 'Content-Type: application/json'  \
+curl https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/find \
+-H 'Content-Type: application/json' \
 -H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
---data-raw \
-'{  
-    "dataSource": "Cluster0",
-    "database": "menu", 
-    "collection": "main course",
-    "pipeline" : [ { "$match": {"name": "$meal"}}, 
-                   { "$group": { "_id" : "$price",
-                          "count" : { "$sum" : 1}}'
+--data-raw '{
+  "dataSource": "Cluster0",
+  "database": "Menu",
+  "collection": "Drinks",
+  "filter": {"name": "Orange juice"}
+}'
+
+curl https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/insertMany \
+-H 'Content-Type: application/json' \
+-H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
+--data-raw '{
+  "dataSource": "Cluster0",
+  "database": "Menu",
+  "collection": "Drinks",
+  "documents": [{
+    "name": "Mango juice",
+    "price": "0.800 OMR"
+  }]
+}'
+
+curl https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/find \
+-H 'Content-Type: application/json' \
+-H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
+--data-raw '{
+  "dataSource": "Cluster0",
+  "database": "Menu",
+  "collection": "Drinks",
+  "filter": {"name": "Mango juice"}
+}'
+
+curl https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/insertMany \
+-H 'Content-Type: application/json' \
+-H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
+--data-raw '{
+  "dataSource": "Cluster0",
+  "database": "Menu",
+  "collection": "Drinks",
+  "documents": [{
+    "name": "Lemon juice",
+    "price": "0.800 OMR"
+  }]
+}'
+
+curl https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/find \
+-H 'Content-Type: application/json' \
+-H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
+--data-raw '{
+  "dataSource": "Cluster0",
+  "database": "Menu",
+  "collection": "Drinks",
+  "filter": {"name": "Lemon juice"}
+}'
+
+curl https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/insertMany \
+-H 'Content-Type: application/json' \
+-H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
+--data-raw '{
+  "dataSource": "Cluster0",
+  "database": "Menu",
+  "collection": "Drinks",
+  "documents": [{
+    "name": "iced tea",
+    "price": "1.200 OMR"
+  }]
+}'
+
+curl https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/find \
+-H 'Content-Type: application/json' \
+-H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
+--data-raw '{
+  "dataSource": "Cluster0",
+  "database": "Menu",
+  "collection": "Drinks",
+  "filter": {"name": "iced tea"}
+}'
+
+curl https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/insertMany \
+-H 'Content-Type: application/json' \
+-H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
+--data-raw '{
+  "dataSource": "Cluster0",
+  "database": "Menu",
+  "collection": "Drinks",
+  "documents": [{
+    "name": "COFFEE",
+    "price": "1.000 OMR"
+  }]
+}'
+
+curl https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/find \
+-H 'Content-Type: application/json' \
+-H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
+--data-raw '{
+  "dataSource": "Cluster0",
+  "database": "Menu",
+  "collection": "Drinks",
+  "filter": {"name": "COFFEE"}
+}'
+curl https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/insertMany \
+-H 'Content-Type: application/json' \
+-H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
+--data-raw '{
+  "dataSource": "Cluster0",
+  "database": "Menu",
+  "collection": "DESSERTS",
+  "documents": [{
+    "name": "Cinnabon",
+    "price": "0.800 OMR"
+  }]
+}'
+
+curl https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/find \
+-H 'Content-Type: application/json' \
+-H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
+--data-raw '{
+  "dataSource": "Cluster0",
+  "database": "Menu",
+  "collection": "DESSERTS",
+  "filter": {"name": "Cinnabon"}
+}'
+
+curl https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/insertMany \
+-H 'Content-Type: application/json' \
+-H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
+--data-raw '{
+  "dataSource": "Cluster0",
+  "database": "Menu",
+  "collection": "DESSERTS",
+  "documents": [{
+    "name": "San Sebastian",
+    "price": "1.200 OMR"
+  }]
+}'
+
+curl https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/find \
+-H 'Content-Type: application/json' \
+-H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
+--data-raw '{
+  "dataSource": "Cluster0",
+  "database": "Menu",
+  "collection": "DESSERTS",
+  "filter": {"name": "San Sebastian"}
+}'
+
+curl https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/insertMany \
+-H 'Content-Type: application/json' \
+-H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
+--data-raw '{
+  "dataSource": "Cluster0",
+  "database": "Menu",
+  "collection": "DESSERTS",
+  "documents": [{
+    "name": "cookie",
+    "price": "0.300 OMR"
+  }]
+}'
+
+curl https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/find \
+-H 'Content-Type: application/json' \
+-H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
+--data-raw '{
+  "dataSource": "Cluster0",
+  "database": "Menu",
+  "collection": "DESSERTS",
+  "filter": {"name": "cookie"}
+}'
+
+curl https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/aggregate \
+-H 'Content-Type: application/json' \
+-H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
+--data-raw '{
+  "dataSource": "Cluster0",
+  "database": "Menu",
+  "collection": "main course",
+  "pipeline": [
+    {"$match": {"name": "$meal"}},
+    {"$group": {"_id": "$price", "count": {"$sum": 1}}}
+  ]
+}'
