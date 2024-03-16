@@ -8,50 +8,50 @@ API KEY
 jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew 
 
 
-
 curl https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/insertOne \
--H 'Content-Type: application/json'  \
+-H 'Content-Type: application/json' \
 -H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
---data-raw \
-'{ 
-  "dataSource": "Cluster0", 
-  "database" : "Menu", 
-  "collection" : "main course", 
-  "document" : { "name": "pasta",
-                 "price": "1.200 OMR",
-                }
-}' 
-
+--data-raw '{
+  "dataSource": "Cluster0",
+  "database": "Menu",
+  "collection": "main course",
+  "document": {
+    "name": "pasta",
+    "price": "1.200 OMR"
+  }
+}'
 
 curl https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/findOne \
--H 'Content-Type: application/json'  \
+-H 'Content-Type: application/json' \
 -H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
---data-raw \
-'{ 
-  "dataSource": "Cluster0", 
-  "database" : "Menu", 
-  "collection" : "main course", 
-  "filter" : {"name" : "Pasta" }
-}' 
+--data-raw '{
+  "dataSource": "Cluster0",
+  "database": "Menu",
+  "collection": "main course",
+  "filter": {"name": "Pasta"}
+}'
 
-
-Postman
----------
-
-https://tinyurl.com/atlasdapi
-
-
-curl  https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/insertMany \
--H 'Content-Type: application/json'  \
+curl https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/insertMany \
+-H 'Content-Type: application/json' \
 -H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
---data-raw \
-'{
-    "dataSource": "Cluster0",
-    "database": "Menu",
-    "collection": "main course",
-    "documents": [{
-            "name": "Beef Burger",
-            "price": "1.300 OMR"
+--data-raw '{
+  "dataSource": "Cluster0",
+  "database": "Menu",
+  "collection": "main course",
+  "documents": [{
+    "name": "Beef Burger",
+    "price": "1.300 OMR"
+  }]
+}'
+
+curl https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/find \
+-H 'Content-Type: application/json' \
+-H 'api-key: jVgECR1wncuZFWZSy3IGeTIRk9AZWGEAXhGzmBwg9NJHx35N8Z5ldAU1PgnY9Jew' \
+--data-raw '{
+  "dataSource": "Cluster0",
+  "database": "Menu",
+  "collection": "main course",
+  "filter": {"name": "Beef Burger"}
 }'
 
 curl  https://ap-southeast-1.aws.data.mongodb-api.com/app/data-dimiv/endpoint/data/v1/action/find \
